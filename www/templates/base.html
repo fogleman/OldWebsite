@@ -1,0 +1,46 @@
+{% from "util.html" import nav_link with context %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Michael Fogleman</title>
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link href="{{ static('favicon.ico') }}" rel="shortcut icon">
+        <link href="{{ static('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ static('style.css') }}" rel="stylesheet">
+        <script src="{{ static('bootstrap/js/bootstrap.min.js') }}"></script>
+    </head>
+    <body>
+        <div class="container-narrow">
+            <div>
+                <ul class="nav nav-pills pull-right">
+                    {{ nav_link('Home', 'index') }}
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+                <h3><a class="muted" href="{{ url_for('index') }}">Michael Fogleman</a></h3>
+            </div>
+            <hr>
+            {% block content %}
+            {% endblock %}
+            <hr>
+            <div class="footer">
+                <a href="https://www.facebook.com/michael.fogleman"><img src="{{ static('icons/facebook.png') }}"></a>
+                <a href="https://github.com/fogleman"><img src="{{ static('icons/github.png') }}"></a>
+                <a href="https://plus.google.com/u/0/106039384993136287582/posts"><img src="{{ static('icons/google_plus.png') }}"></a>
+                <a href="http://www.linkedin.com/profile/view?id=4051253"><img src="{{ static('icons/linked_in.png') }}"></a>
+                <a href="http://www.reddit.com/user/FogleMonster/"><img src="{{ static('icons/reddit.png') }}"></a>
+                <a href="http://stackoverflow.com/users/90308/foglebird"><img src="{{ static('icons/stack_overflow.png') }}"></a>
+                <a href="https://twitter.com/FogleBird"><img src="{{ static('icons/twitter.png') }}"></a>
+                <a href="http://www.youtube.com/user/FogleBird"><img src="{{ static('icons/youtube.png') }}"></a>
+                <a href="mailto:michael.fogleman@gmail.com"><img src="{{ static('icons/email.png') }}"></a>
+                <p class="muted">&copy; Michael Fogleman, 2013. All rights reserved.</p>
+            </div>
+        </div>
+    </body>
+</html>
+<!-- icons by http://simpleicons.org/ -->
