@@ -18,9 +18,8 @@
             <div>
                 <ul class="nav nav-pills pull-right">
                     {{ nav_link('Home', 'index') }}
-                    <li><a href="#">About</a></li>
                     <li><a href="#">Projects</a></li>
-                    <li><a href="#">Resume</a></li>
+                    {{ nav_link('Resume', 'resume') }}
                 </ul>
                 <h3><a class="muted" href="{{ url_for('index') }}">Michael Fogleman</a></h3>
             </div>

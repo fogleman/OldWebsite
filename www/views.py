@@ -4,16 +4,10 @@ from www import app, db
 from models import Comment
 import datetime
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
 def index():
-    form = CommentForm()
-    if form.validate_on_submit():
-        comment = Comment(
-            form.text.data,
-            datetime.datetime.now()
-        )
-        db.session.add(comment)
-        db.session.commit()
-        return redirect(url_for('index'))
-    comments = Comment.query.order_by(db.desc(Comment.timestamp))
-    return render_template('index.html', comments=comments, form=form)
+    return render_template('index.html')
+
+@app.route('/resume/')
+def resume():
+    return render_template('resume.html')

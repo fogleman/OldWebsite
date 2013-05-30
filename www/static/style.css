@@ -3,6 +3,14 @@ body {
     padding-bottom: 40px;
 }
 
+p {
+    line-height: 24px;
+}
+
+li {
+    line-height: 24px;
+}
+
 .container-narrow {
     margin: 0 auto;
     max-width: 700px;
