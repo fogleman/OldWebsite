@@ -5,11 +5,12 @@
         <p class="lead">
             Hello! My name is Michael Fogleman.
             I am a Principal Software Engineer at <a href="http://www.liquid-logic.com/">Advanced Liquid Logic</a>.
-            I love programming and am usually busy with one of many <a href="">personal projects</a>.
+            I love programming and am usually busy with one of many <a href="{{ url_for('projects') }}">personal projects</a>.
             My favorite programming language is Python, though I also have significant <a href="{{ url_for('resume') }}">experience</a> with several other languages and technologies.
             I like gardening, photography, '80s music, space exploration and all kinds of food.
         </p>
     </div>
+    {#
     <hr>
     <div class="row-fluid">
         <div class="span6">
@@ -29,4 +30,5 @@
             <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
         </div>
     </div>
+    #}
 {% endblock %}
