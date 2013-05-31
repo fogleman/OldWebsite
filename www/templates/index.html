@@ -2,14 +2,42 @@
 
 {% block content %}
     <div>
+        <h3>About Me</h3>
         <p class="lead" style="text-align: justify;">
-            Hello! My name is Michael Fogleman.
-            I am a Principal Software Engineer at <a href="http://www.liquid-logic.com/">Advanced Liquid Logic</a>.
-            I love programming and am usually busy with one of many <a href="{{ url_for('projects') }}">personal projects</a>.
-            My favorite programming language is Python, though I also have significant <a href="{{ url_for('resume') }}">experience</a> with several other languages and technologies.
-            I like gardening, photography, '80s music, space exploration and all kinds of food.
+            Hello! My name is Michael Fogleman. I am a Principal Software Engineer at <a href="http://www.liquid-logic.com/">Advanced Liquid Logic</a>. I love programming and am usually busy with one of many <a href="{{ url_for('projects') }}">personal projects</a>. My favorite programming language is Python, though I also have significant <a href="{{ url_for('resume') }}">experience</a> with several other languages and technologies. I like gardening, photography, '80s music, space exploration and all kinds of food.
         </p>
     </div>
+    <hr>
+    <h3>My Family</h3>
+    <div class="row-fluid">
+        <div class="thumbnails">
+            <div class="span3">
+                <div class="thumbnail" style="text-align: center;">
+                    <img src="{{ static('img/michael2.jpg') }}">
+                    <h4>Michael</h4>
+                </div>
+            </div>
+            <div class="span3">
+                <div class="thumbnail" style="text-align: center;">
+                    <img src="{{ static('img/sandra1.jpg') }}">
+                    <h4>Sandra</h4>
+                </div>
+            </div>
+            <div class="span3">
+                <div class="thumbnail" style="text-align: center;">
+                    <img src="{{ static('img/megan1.jpg') }}">
+                    <h4>Megan</h4>
+                </div>
+            </div>
+            <div class="span3">
+                <div class="thumbnail" style="text-align: center;">
+                    <img src="{{ static('img/colin1.jpg') }}">
+                    <h4>Colin</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
     {#
     <hr>
     <div class="row-fluid">
