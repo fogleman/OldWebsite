@@ -15,3 +15,7 @@ def projects():
 @app.route('/resume/')
 def resume():
     return render_template('resume.html')
+
+@app.route('/scale/')
+def scale():
+    return render_template('scale.html')
