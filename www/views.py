@@ -4,6 +4,10 @@ from www import app, db
 from models import Comment
 import datetime
 
+@app.errorhandler(404)
+def error_404(e):
+    return render_template('404.html'), 404
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -20,6 +24,14 @@ def resume():
 def imeme():
     return render_template('imeme.html')
 
+@app.route('/memes/')
+def memes():
+    return redirect(url_for('imeme'))
+
 @app.route('/scale/')
 def scale():
     return render_template('scale.html')
+
+@app.route('/phrases/')
+def phrases():
+    return render_template('phrases.html')

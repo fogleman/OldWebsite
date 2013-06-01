@@ -35,3 +35,14 @@ li {
 .thumbnails a:hover {
     text-decoration: none;
 }
+
+/* phrases */
+.button-row {
+    text-align: center;
+    margin: 1em;
+}
+
+.words-row {
+    text-align: center;
+    text-transform: capitalize;
+}
