@@ -24,6 +24,14 @@ li {
     text-align: center;
 }
 
-.projects li {
+.thumbnails li {
     text-align: center;
+}
+
+.thumbnails a {
+    color: #333;
+}
+
+.thumbnails a:hover {
+    text-decoration: none;
 }

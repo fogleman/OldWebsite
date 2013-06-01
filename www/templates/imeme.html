@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3>iMeme</h3>
+    <p class="lead" style="text-align: justify;">
+        iMeme is a meme generator for Windows and Mac OS X that let's you quickly add captions to popular internet memes.
+    </p>
+    <img src="{{ static('img/imeme1.png') }}">
+    <hr>
+    <h3>Download</h3>
+    <p class="lead">Last Updated: 2012-12-08</p>
+    <div class="row-fluid">
+        <ul class="thumbnails">
+            <li class="span6">
+                <a class="thumbnail" href="{{ static('iMeme-setup.exe') }}">
+                    <img src="{{ static('img/windows.png') }}">
+                    <h3>Windows</h3>
+                    <h4>iMeme-setup.exe (11 MB)</h4>
+                </a>
+            </li>
+            <li class="span6">
+                <a class="thumbnail" href="{{ static('iMeme.app.zip') }}">
+                    <img src="{{ static('img/mac.png') }}">
+                    <h3>Mac OS X</h3>
+                    <h4>iMeme.app.zip (6 MB)</h4>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <h3>Features</h3>
+    <ul>
+        <li>Over 100 built-in templates.</li>
+        <li>Enter your own header and footer text.</li>
+        <li>Adjustable text size and alignment.</li>
+        <li>Use your own images.</li>
+        <li>Save as PNG or copy to the clipboard.</li>
+        <li>Print directly from the app.</li>
+        <li>Automatically upload to imgur.</li>
+        <li>Automatically post to reddit.</li>
+        <li>Works on OS X 10.5 and up.</li>
+        <li>Works on Windows XP and up.</li>
+    </ul>
+    <hr>
+    <h3>Contribute</h3>
+    <p>iMeme is open source and hosted on GitHub!</p>
+    <ul>
+        <li><a href="https://github.com/fogleman/pyMeme">https://github.com/fogleman/pyMeme</a> (Windows)</li>
+        <li><a href="https://github.com/fogleman/iMeme">https://github.com/fogleman/iMeme</a> (Mac OS X)</li>
+    </ul>
+    <hr>
+    <h3>Support</h3>
+    <p>Comments, questions or suggestions? Contact me at: <a href="mailto:michael.fogleman@gmail.com">michael.fogleman@gmail.com</a></p>
+    <hr>
+{% endblock %}
