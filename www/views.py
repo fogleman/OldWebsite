@@ -39,3 +39,7 @@ def phrases():
 @app.route('/minecraft/')
 def minecraft():
     return render_template('minecraft.html')
+
+@app.route('/star-rocket/')
+def star_rocket():
+    return render_template('star-rocket.html')
