@@ -43,3 +43,7 @@ def minecraft():
 @app.route('/star-rocket/')
 def star_rocket():
     return render_template('star-rocket.html')
+
+@app.route('/dcpu/')
+def dcpu():
+    return render_template('dcpu.html')

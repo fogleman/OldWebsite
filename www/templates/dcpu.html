@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3>DCPU-16</h3>
+    <p class="lead" style="text-align: justify;">
+        An assembler, disassembler and emulator for the virtual <a href="http://dcpu.com/">DCPU-16</a> written in Python and C. The DCPU-16 is intended to form the basis of a future video game by <a href="https://mojang.com/">Mojang</a> called <a href="http://0x10c.com/">0x10c</a>.
+    </p>
+    <div style="text-align: center;">
+        <img src="{{ static('img/nyan.gif') }}">
+    </div>
+    <hr>
+    <h3>DCPU-16 Highlights</h3>
+    <ul>
+        <li>16 bit words</li>
+        <li>0x10000 words of ram</li>
+        <li>8 registers (A, B, C, X, Y, Z, I, J)</li>
+        <li>program counter (PC)</li>
+        <li>stack pointer (SP)</li>
+        <li>extra/excess (EX)</li>
+        <li>interrupt address (IA)</li>
+    </ul>
+    <hr>
+    <h3>Implemented Specifications</h3>
+    <ul>
+        <li>DCPU-16 1.7</li>
+        <li>LEM1802</li>
+        <li>Generic Keyboard</li>
+        <li>Generic Clock</li>
+    </ul>
+    <hr>
+    <h3>Link</h3>
+    <p>This project is hosted on GitHub: <a href="https://github.com/fogleman/DCPU-16">https://github.com/fogleman/DCPU-16</a></p>
+    <hr>
+    <h3>Support</h3>
+    <p>Comments, questions or suggestions? Contact me at: <a href="mailto:michael.fogleman@gmail.com">michael.fogleman@gmail.com</a></p>
+{% endblock %}
