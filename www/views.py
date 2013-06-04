@@ -47,3 +47,7 @@ def star_rocket():
 @app.route('/dcpu/')
 def dcpu():
     return render_template('dcpu.html')
+
+@app.route('/ricochet/')
+def ricochet():
+    return render_template('ricochet.html')
