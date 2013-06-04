@@ -51,3 +51,7 @@ def dcpu():
 @app.route('/ricochet/')
 def ricochet():
     return render_template('ricochet.html')
+
+@app.route('/sync/')
+def sync():
+    return render_template('sync.html')

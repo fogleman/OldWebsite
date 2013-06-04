@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3>Sync: Virtual, Synchronizing Fireflies</h3>
+    <p class="lead" style="text-align: justify;">
+        A synchronization experiment inspired by the book "Sync: How Order Emerges From Chaos In the Universe, Nature, and Daily Life" by Steven H. Strogatz.
+    </p>
+    <div style="text-align: center;">
+        <img src="{{ static('img/sync1.png') }}">
+    </div>
+    <hr>
+    <h3>About</h3>
+    <p>Each cell flashes roughly once every few seconds. The cells influence each other in such a way that they all eventually synchronize, similar to synchronizing fireflies.</p>
+    <p>There is a 2-D implementation (wxPython) and a 3-D implementation (Pyglet).</p>
+    <p>Several configuration parameters are available...</p>
+    <ul>
+        <li>Grid Width, Height and Depth</li>
+        <li>Simulation Speed</li>
+        <li>Average Cell Period</li>
+        <li>Influence Factor</li>
+        <li>Cell Similarity Factor</li>
+    </ul>
+    <p>Each cell charges following a curve similar to a charging capacitor. When the cell reaches a threshold, it fires causing a blink in the visualization. The cell firing also kicks neighboring cells by a factor proportional to the inverse of their squared distance. The cells need not have identical individual frequencies to reach sychronization. This can be tested by tweaking the similarity factor, which causes the cells to vary in their charging times.</p>
+    <hr>
+    <h3>Link</h3>
+    <p>This project is hosted on GitHub: <a href="https://github.com/fogleman/Sync">https://github.com/fogleman/Sync</a></p>
+    <hr>
+    <h3>Video</h3>
+    <div class="" style="text-align: center;">
+        <iframe title="YouTube video player" width="600" height="365" src="http://www.youtube.com/embed/1G6GHQ-EbJI" frameborder="0" allowfullscreen></iframe>
+    </div>
+{% endblock %}
