@@ -36,6 +36,14 @@ li {
     text-decoration: none;
 }
 
+.projects h4 {
+    margin-bottom: 0;
+}
+
+.projects h6 {
+    margin-top: 0;
+}
+
 /* phrases */
 .button-row {
     text-align: center;
