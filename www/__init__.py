@@ -7,5 +7,4 @@ app.config.from_object('www.config')
 db = SQLAlchemy(app)
 
 import hooks
-import models
 import views

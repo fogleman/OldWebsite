@@ -1,8 +1,5 @@
 from flask import render_template, url_for, redirect
-from forms import CommentForm
-from www import app, db
-from models import Comment
-import datetime
+from www import app
 
 @app.errorhandler(404)
 def error_404(e):
