@@ -33,9 +33,9 @@ def scale():
 def phrases():
     return render_template('phrases.html')
 
-@app.route('/minecraft/')
-def minecraft():
-    return render_template('minecraft.html')
+@app.route('/craft/')
+def craft():
+    return render_template('craft.html')
 
 @app.route('/star-rocket/')
 def star_rocket():

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3>Craft</h3>
+    <p class="lead" style="text-align: justify;">
+        Craft is a Minecraft clone for Windows, Mac OS X and Linux. It is written in just a few thousand lines of C and uses modern OpenGL (shaders). Online multiplayer support is included using a Python-based server.
+    </p>
+    <a href="{{ static('img/craft1.png') }}"><img src="{{ static('img/craft1.png') }}"></a>
+    <div class="row-fluid">
+        <ul class="thumbnails">
+            <li class="span3"><a href="{{ static('img/craft2.png') }}"><img src="{{ static('img/craft2.png') }}"></li></a>
+            <li class="span3"><a href="{{ static('img/craft3.png') }}"><img src="{{ static('img/craft3.png') }}"></li></a>
+            <li class="span3"><a href="{{ static('img/craft4.png') }}"><img src="{{ static('img/craft4.png') }}"></li></a>
+            <li class="span3"><a href="{{ static('img/craft5.png') }}"><img src="{{ static('img/craft5.png') }}"></li></a>
+        </ul>
+    </div>
+    <hr>
+    <h3>Download</h3>
+    <p class="lead">Last Updated: 2013-12-27</p>
+    <div class="row-fluid">
+        <ul class="thumbnails">
+            <li class="span6">
+                <a class="thumbnail" href="{{ ext('Craft.zip') }}">
+                    <img src="{{ static('img/windows.png') }}">
+                    <h3>Windows</h3>
+                    <h4>Craft.zip (850 KB)</h4>
+                </a>
+            </li>
+            <li class="span6">
+                <a class="thumbnail" href="{{ ext('Craft.app.zip') }}">
+                    <img src="{{ static('img/mac.png') }}">
+                    <h3>Mac OS X</h3>
+                    <h4>Craft.app.zip (760 KB)</h4>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <h3>Features</h3>
+    <ul>
+        <li>Simple but nice looking terrain generation using <a href="http://en.wikipedia.org/wiki/Simplex_noise">Simplex noise</a>.</li>
+        <li>More than 10 types of blocks and more can be added easily.</li>
+        <li>Supports plants (grass, flowers, trees, etc.) and transparency (glass).</li>
+        <li>Simple clouds in the sky (they don't move).</li>
+        <li>Day / night cycles and a textured sky dome.</li>
+        <li>World changes persisted in a sqlite3 database.</li>
+        <li>Multiplayer support!</li>
+    </ul>
+    <hr>
+    <h3>Contribute</h3>
+    <p>Craft is open source and hosted on GitHub!</p>
+    <p><a href="https://github.com/fogleman/Craft">https://github.com/fogleman/Craft</a></p>
+    <hr>
+    <h3>Support</h3>
+    <p>Comments, questions or suggestions? Contact me at: <a href="mailto:michael.fogleman@gmail.com">michael.fogleman@gmail.com</a></p>
+{% endblock %}
