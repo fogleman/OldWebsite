@@ -44,6 +44,10 @@ li {
     margin-top: 0;
 }
 
+.craft-thumbnails li {
+    margin: 0;
+}
+
 /* phrases */
 .button-row {
     text-align: center;
