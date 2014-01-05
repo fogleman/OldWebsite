@@ -50,13 +50,11 @@
         <li>Supports plants (grass, flowers, trees, etc.) and transparency (glass).</li>
         <li>Simple clouds in the sky (they don't move).</li>
         <li>Day / night cycles and a textured sky dome.</li>
+        <li>Signs - you can write text on any block.</li>
+        <li>Ambient occlusion for basic shading of blocks.</li>
         <li>World changes persisted in a sqlite3 database.</li>
         <li>Multiplayer support!</li>
     </ul>
-    <hr>
-    <h3>Contribute</h3>
-    <p>Craft is open source and hosted on GitHub!</p>
-    <p><a href="https://github.com/fogleman/Craft">https://github.com/fogleman/Craft</a></p>
     <hr>
     <h3>The Making Of Craft</h3>
     <p>These screenshots show the progression of Craft over time - from a single, white cube to the current state today. I took these screenshots by checking out old commits in the git repository. The initial commit was on 2013-04-09.</p>
@@ -145,6 +143,8 @@
         <p>Collision testing simply adjusts the player’s position to remain a certain distance away from any adjacent blocks that are obstacles. (Clouds and plants are not marked as obstacles, so you pass right through them.)</p>
         <h4>Sky Dome</h4>
         <p>A textured sky dome is used for the sky. The X-coordinate of the texture represents time of day. The Y-values map from the bottom of the sky sphere to the top of the sky sphere. The player is always in the center of the sphere. The fragment shaders for the blocks also sample the sky texture to determine the appropriate fog color to blend with based on the block’s position relative to the backing sky.</p>
+        <h4>Ambient Occlusion</h4>
+        <p>Ambient occlusion is implemented as described on this page: <a href="http://0fps.wordpress.com/2013/07/03/ambient-occlusion-for-minecraft-like-worlds/">http://0fps.wordpress.com/2013/07/03/ambient-occlusion-for-minecraft-like-worlds/</a></p>
         <h4>Dependencies</h4>
         <ul>
             <li>GLEW is used for managing OpenGL extensions across platforms.</li>
